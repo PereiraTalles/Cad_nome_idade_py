@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .cabecario {
+            background-color: aqua;
+            text-align: center;
+        }
+        .meio {
+            text-align: center;
+            height: 10rem;
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 30px;
+            margin-left: 10rem;
+            margin-right: 10rem;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+        input, button{
+            margin: 2px;
+        }
+        @media (max-width: 878px) {
+        .meio {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="cabecario">
+            <h1>Cadastre-me!</h1>
+        </div>
+    </header>
+    <section>
+        <div class="meio">
+                <h1>Cadastro de Usuários</h1>
+            <form action="">
+                Nome <input type="text"> <br>
+                Idade <input type="text"> <br>
+                <button>Enviar</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
