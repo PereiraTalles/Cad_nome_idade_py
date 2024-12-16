@@ -11,6 +11,7 @@
             box-sizing: border-box;
         }
         .cabecario {
+            padding: 0;
             background-color: aqua;
             text-align: center;
         }
@@ -42,14 +43,14 @@
         </div>
     </header>
     <section>
+        <form action="{% url 'listagem_usuarios'%}">
         <div class="meio">
                 <h1>Cadastro de Usuários</h1>
-            <form action="">
-                Nome <input type="text"> <br>
-                Idade <input type="text"> <br>
-                <button>Enviar</button>
-            </form>
+                Nome <input class="form-control-sm" type="text"> <br>
+                Idade <input class="form-control-sm" type="text"> <br>
+                <button class="form-control-sm" >Enviar</button>
         </div>
+    </form>
     </section>
 </body>
 </html>
